@@ -1,0 +1,68 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+header{
+    height:13vh;
+    /* background-color: blueviolet; */
+}
+.section2{
+    width: 70vw;
+    height: 90px;
+    background-color: white;
+    box-shadow: 3px 3px 12px rgb(92, 92, 92);
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -65px;
+}
+.section3{
+    margin-top: 100px;
+}
+.section3 .content h6{
+    color: rgb(255, 160, 16);
+}
+.section3 .content h1::after{
+    content: ' HOTELIER';
+    color: rgb(255, 160, 16);
+}
+.section4 .heading h1::after{
+    content: 'ROOMS';
+    color: rgb(255, 160, 16);
+}
+.section6 .heading h1::after{
+    content: 'SERVICES';
+    color: rgb(243, 146, 0);
+    font-weight: bold;
+}
+.section7{
+    background-image: linear-gradient(to bottom right,rgb(255, 123, 0),rgb(243, 88, 32));
+    background-size: 200% 200%;
+    animation-name: animate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#facility:hover{
+    transition: all .3s ease;
+    transform: scale(1.05);
+}
+.section8 .heading h1::after{
+    content: 'STAFFS';
+    font-weight: bold;
+    color: rgb(255, 160, 16);
+}
+.section9 .heading h1::after{
+    content: 'BLOG';
+    font-weight: bold;
+    color: rgb(255, 160, 16);
+}
+.section10 .heading h3::after{
+    content: ' NEWSLETTER';
+    font-weight: bold;
+    color: rgb(255, 160, 16);
+}
+.footer li:hover{
+    color: white;
+}
