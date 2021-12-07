@@ -1,21 +1,72 @@
+
 body{
     margin: 0%;
     padding: 0%;
+    width: 100vw;
+    box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 header{
-    height:13vh;
-    /* background-color: blueviolet; */
+    padding:0px 20px 0px 0px;
+    background-color: rgb(6, 6, 22);
+}
+header a{
+    cursor: pointer;
+}
+#bars{
+    visibility: hidden;
+}
+@media screen and (max-width:768px){
+    #contact{
+        display: none;
+    }
+    #menu a{
+        display: none;
+    }
+    #bars{
+        visibility: visible;
+    }
+    #submenu1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    #btn2{
+        display: none;
+    }
+    
 }
 .section2{
     width: 70vw;
-    height: 90px;
+    /* height: 90px; */
     background-color: white;
     box-shadow: 3px 3px 12px rgb(92, 92, 92);
-    position: absolute;
+    position: relative;
     left: 15%;
     right: 15%;
-    bottom: -65px;
+    bottom: 45px;
+}
+#caption{
+    margin-bottom: 90px;
+}
+@media screen and (max-width:768px){
+    #caption{
+        margin-bottom: 0px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    #details{
+        margin-bottom: 20px;
+    }
+    .section2{
+        position: relative;
+        top:20px;
+    }
+    
 }
 .section3{
     margin-top: 100px;
@@ -30,6 +81,39 @@ header{
 .section4 .heading h1::after{
     content: 'ROOMS';
     color: rgb(255, 160, 16);
+}
+
+@media screen and (max-width:990px){
+    #junior,#executive,#super{
+        width: 360px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:990px){
+    #blog{
+        width: 360px;
+        margin: 0% auto;
+        margin-bottom: 30px;
+    }
+    
+}
+@media screen and (max-width:990px){
+    #staff{
+        width: 300px;
+        margin: 0% auto;
+        margin-bottom: 30px;
+    }
+    
+}
+@media screen and (max-width:990px){
+    #discover{
+        padding: 20px ;
+    }
+
+    
 }
 .section6 .heading h1::after{
     content: 'SERVICES';
@@ -65,4 +149,32 @@ header{
 }
 .footer li:hover{
     color: white;
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        padding: 25px;
+        
+    }
+    #footer{
+        padding-left: 50px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    #Subscribe{
+        margin: 0px 20px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    #images{
+        margin-top: 80px;
+    }
+    
+}
+@media screen and (max-width:990px){
+    #facility{
+        margin-bottom: 30px;
+    }
+    
 }
