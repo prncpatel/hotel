@@ -12,6 +12,9 @@ header{
     padding:0px 20px 0px 0px;
     background-color: rgb(6, 6, 22);
 }
+#menu a{
+    text-decoration: none;
+}
 header a{
     cursor: pointer;
 }
@@ -27,6 +30,9 @@ header a{
     }
     #bars{
         visibility: visible;
+        position: absolute;
+        right: -70px;
+        bottom: 15px;
     }
     #submenu1{
         display: flex;
